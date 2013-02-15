@@ -1,7 +1,10 @@
-define(['Boiler', './mainMenu/component', './language/component', './theme/component', './landingPage/component', './footer/component'], function(Boiler, MainMenuComponent, LanguageComponent, ThemeComponent, LandingPageComponent, FooterComponent) {
+define(['Boiler', './settings', './mainMenu/component', './language/component', './theme/component', './landingPage/component',  './appShell/component',  './footer/component'], function(Boiler, settings, MainMenuComponent, LanguageComponent, ThemeComponent, LandingPageComponent, AppShellComponent, FooterComponent) {
+
 
     var Module = function(globalContext) {
         var context = new Boiler.Context(globalContext);
+		context.addSettings(settings);
+
 
         //scoped DomController that will be effective only on $('#page-content')
         var controller = new Boiler.DomController($('#page-content'));
@@ -17,7 +20,7 @@ define(['Boiler', './mainMenu/component', './language/component', './theme/compo
         //the landing page should respond to the root URL, so let's use an URLController too
         var controller = new Boiler.UrlController($(".appcontent"));
         controller.addRoutes({
-            "/" : new LandingPageComponent()
+            "#/{applicationid}/:params:" : new AppShellComponent(context)
         });
         controller.start();
     };

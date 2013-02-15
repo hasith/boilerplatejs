@@ -1,0 +1,14 @@
+[ 	
+	{
+		"comp-name" : "OrderDetails",
+		"layout-position" : "top-middle"
+	},
+	{
+		"comp-name" : "ShippingDetails",
+		"layout-position" : "bottom-middle"
+	},
+	{
+		"comp-name" : "OwnerDetails",
+		"layout-position" : "bottom-middle"
+	}
+]
