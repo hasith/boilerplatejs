@@ -5,12 +5,12 @@
 	
 	"components" : [ 	
 		{
-			"comp-name" : "ContactDetails",
+			"comp-name" : "ShippingDetails",
 			"layout-position" : "top-middle"
 		},
 		{
-			"comp-name" : "ShippingDetails",
-			"layout-position" : "bottom-middle"
+			"comp-name" : "ContactDetails",
+			"layout-position" : "top-middle"
 		}
 	]
 
