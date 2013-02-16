@@ -3,12 +3,11 @@ define([], function() {
 	var ViewModel = function() {
 
 		this.employee = {
-			"id" : "emp01order",
-			"firstName" : "Bob",
-			"lastName" : "Bertington",
-			"age" : 21,
-			"email" : "bob@99x.lk",
-			"averageSales" : 1000
+			"id" : "343535",
+			"product" : "Hard Disk",
+			"price" : "NOK 230",
+			"quantity" : 4,
+			"date" : "12 Sep 2011"
 		};
 
 	};

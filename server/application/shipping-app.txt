@@ -5,7 +5,7 @@
 	
 	"components" : [ 	
 		{
-			"comp-name" : "OrderDetails",
+			"comp-name" : "ContactDetails",
 			"layout-position" : "top-middle"
 		},
 		{
