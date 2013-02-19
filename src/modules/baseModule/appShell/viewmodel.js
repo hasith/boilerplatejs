@@ -15,7 +15,7 @@ define(function(require) {
 				for (var i = 0; i < result.components.length; i++) {
 					
 					var pluginName = result.components[i]['comp-name'];
-					var pluginDefPath = '../../../../src/plugins/' + pluginName + '/plugin.js';
+					var pluginDefPath = '../../../plugins/' + pluginName + '/plugin.js';
 					
 					//use a closure to keep 'pluginDefPath' locked
 					(function(pluginDefPath) {

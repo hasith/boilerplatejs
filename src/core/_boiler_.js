@@ -16,10 +16,10 @@
 	@main BoilerCoreClasses
 	**/
     return {
-        Context : require("./core/context"),
-        DomController : require("./core/dom-controller"),
-        UrlController : require("./core/url-controller"),
-        ViewTemplate: require("./core/view-template"),
-        Helpers : require ("./core/helpers/_helpers_")
+        Context : require("./src/core/context"),
+        DomController : require("./src/core/dom-controller"),
+        UrlController : require("./src/core/url-controller"),
+        ViewTemplate: require("./src/core/view-template"),
+        Helpers : require ("./src/core/helpers/_helpers_")
     };
 });
